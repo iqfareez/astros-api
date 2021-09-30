@@ -1,0 +1,25 @@
+name: 'telegram ping to self'
+
+# Controls when the workflow will run
+on:
+  workflow_dispatch:
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  ping:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - name: HTTP Request Action
+        uses: fjogeleit/http-request-action@v1.8.1
+        with:
+          url: 'https://api.telegram.org/bot${{secrets.TELE_BOT_API_KEY}}/sendMessage'
+          method: 'POST'
+          data: '{
+            "chat_id": 320195187,
+            "parse_mode": "MarkdownV2",
+            "text": "${{github.workflow}} *completed*"
+            }'

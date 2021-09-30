@@ -1,0 +1,19 @@
+{
+  "name": "astros-opennotify",
+  "version": "1.0.0",
+  "description": "Unofficial https mirror for astros",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/iqfareez/mpt-backup-api.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "homepage": "https://mpt-backup-api.herokuapp.com/",
+  "dependencies": {
+    "json-server": "^0.16.2"
+  }
+}

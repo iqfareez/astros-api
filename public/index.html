@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A 'mirror' to JAKIM e-solat API">
+  <title>Astros API from OpenNotify (Unofficial)</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <!-- Primary Meta Tags -->
+  <meta name="title" content="Astros from OpenNotify">
+  <meta name="description" content="Unofficial https mirror for astros">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mpt-backup-api.herokuapp.com/">
+  <meta property="og:title" content="Astros from OpenNotify">
+  <meta property="og:description" content="Unofficial https mirror for astros">
+  <meta property="og:image"
+    content="https://res.cloudinary.com/iqfareez-cloud/image/upload/v1632756083/metatags/mpt_backup_api_bgnkh1.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://mpt-backup-api.herokuapp.com/">
+  <meta property="twitter:title" content="Astros from OpenNotify">
+  <meta property="twitter:description" content="Unofficial https mirror for astros">
+  <meta property="twitter:image"
+    content="https://res.cloudinary.com/iqfareez-cloud/image/upload/v1632756084/metatags/iium_service_status_tsexl9.png">
+
+  <link href="styles.css" rel="stylesheet">
+
+</head>
+
+<script>
+  console.log("%c👀", "font-size: 130px");
+</script>
+
+<body>
+
+  <div class="col-lg-8 mx-auto p-3 py-md-5">
+    <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+      <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="fs-4">People In Space API from OpenNotify (Unofficial)</span>
+      </a>
+    </header>
+
+    <main>
+      <h1>Welcome</h1>
+      <p class="fs-5 col-md-8">
+        This API is created because the original one still using <code>http</code> protocal. It may cause various
+        security issues.
+        This API was not meant for public use. All credits shall be given to the <a href="http://open-notify.org/"
+          target="_blank" rel="noopener noreferrer">Open Notify</a>.
+      </p>
+
+      <div class="mb-5">
+        <a href="https://play.google.com/store/apps/details?id=live.iqfareez.waktusolatmalaysia"
+          class="btn btn-primary m-1">Download MPT app</a>
+        <a href="https://iqfareez.github.io/jakim-esolat-status/" class="btn btn-secondary m-1">JAKIM E-solat status</a>
+      </div>
+
+      <hr class="col-3 col-md-2 mb-5">
+
+      <div class="row g-5">
+        <div class="col-md-6">
+          <h2>Data health </h2>
+          <!-- <span class="badge bg-primary">Primary</span> -->
+          <p>Prayer times data will be refresh from JAKIM's server at monthly intervals. Fetcher is scheduled to run
+            (typically) at 8.00 am on the first day of the month.</p>
+          <p>Hence, this backup database is considered <b>valid in the same month</b> as the fetcher last run date.</p>
+          <div id="last-run"></div>
+        </div>
+
+        <div class="col-md-6">
+          <h2>Resources</h2>
+          <div id="resources"></div>
+          <p>Example: <kbd>GET</kbd>&nbsp;<code>https://mpt-backup-api.herokuapp.com/solat/SGR01</code></p>
+          <p>where <code>SGR01</code> is the location code. View full list <a href="./jakimzones.html"> here</a>.</p>
+        </div>
+
+        <div class="col-md-6">
+          <h2>Links</h2>
+          <p>If you're eager to know more</p>
+          <ul>
+            <li><a href="https://www.e-solat.gov.my/" target="_blank">Portal e-solat JAKIM (Data source)</a>
+            </li>
+            <li><a href="https://github.com/iqfareez/mpt-backup-api" target="_blank">Source</a>
+            </li>
+            <li><a href="https://github.com/typicode/json-server" target="_blank">json-server - Backbone of this API</a>
+            </li>
+            <li><a href="https://github.com/iqfareez/app_waktu_solat_malaysia/pull/82#issuecomment-927835374"
+                target="_blank">Why this website even exist?</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </main>
+    <footer class=" pt-5 my-5 text-muted border-top">
+      Muhammad Fareez Iqmal &middot; &copy; 2021 <br> <a target="_blank" href="https://twitter.com/iqfareez">Twitter</a>
+      <a target="_blank" href="http://github.com/iqfareez">GitHub</a>
+    </footer>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
