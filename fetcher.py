@@ -19,7 +19,7 @@ json_response = response.json()
 
 # Only put into json if everything's fine
 if (response.status_code == 200) and json_response['message'] == 'success':
-    print(f"Got data")
+    print(f"Got data yeay")
     number = json_response['number']  # original response
     message = json_response['message']  # original response
 

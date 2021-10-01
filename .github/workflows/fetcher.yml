@@ -39,7 +39,7 @@ jobs:
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
+          branch: master
       - name: Telegram notify
         uses: fjogeleit/http-request-action@v1.8.1
         with:
@@ -49,5 +49,5 @@ jobs:
             "chat_id": -1001591844692,
             "parse_mode": "MarkdownV2",
             "disable_web_page_preview": true,
-            "text": "${{github.workflow}} *completed* 🛰 \\. Triggered by `${{github.event_name}}`\\. View [website](https:\/\/mpt-backup-api.herokuapp.com) or [action runs](https:\/\/github.com\/${{github.repository}}\/actions\/runs\/${{github.run_id}})\\."
+            "text": "${{github.workflow}} *completed* 🛰 \\. Triggered by `${{github.event_name}}`\\. View [website](https:\/\/astros-api.herokuapp.com) or [action runs](https:\/\/github.com\/${{github.repository}}\/actions\/runs\/${{github.run_id}})\\."
             }'
