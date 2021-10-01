@@ -4,8 +4,6 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="A 'mirror' to JAKIM e-solat API">
-  <title>Astros API from OpenNotify (Unofficial)</title>
 
   <!-- Bootstrap core CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -17,14 +15,14 @@
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mpt-backup-api.herokuapp.com/">
+  <meta property="og:url" content="http://astros-api.herokuapp.com/">
   <meta property="og:title" content="Astros from OpenNotify">
   <meta property="og:description" content="Unofficial https mirror for astros">
   <meta property="og:image" content="https://github.com/iqfareez/astros-api/blob/master/images/meta-image.png?raw=true">
 
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://mpt-backup-api.herokuapp.com/">
+  <meta property="twitter:url" content="http://astros-api.herokuapp.com/">
   <meta property="twitter:title" content="Astros from OpenNotify">
   <meta property="twitter:description" content="Unofficial https mirror for astros">
   <meta property="twitter:image"
@@ -43,23 +41,29 @@
   <div class="col-lg-8 mx-auto p-3 py-md-5">
     <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
       <a href="/" class="d-flex align-items-center text-dark text-decoration-none">
-        <span class="fs-4">People In Space API from OpenNotify (Unofficial)</span>
+        <img src="icon.png" alt="People In Space icon" height="50" style="padding-right: 20px;">
+        <span class="fs-4">People In Space API</span>
       </a>
     </header>
 
     <main>
       <h1>Welcome</h1>
       <p class="fs-5 col-md-8">
-        This API is created because the original one still using <code>http</code> protocal. It may cause various
-        security issues.
-        This API was not meant for public use. All credits shall be given to the <a href="http://open-notify.org/"
-          target="_blank" rel="noopener noreferrer">Open Notify</a>.
+        Get to know who are currently on the space. Basic info are available such as their <b>names, craft, and
+          image</b>. Feel free to use in small/medium applications.
+      <p>
+        Base data are from <a href="http://open-notify.org/" target="_blank" rel="noopener noreferrer">Open
+          Notify</a>, images are from <a href="https://www.microsoft.com/en-us/bing/apis/bing-image-search-api"
+          target="_blank" rel="noopener noreferrer">Bing Image Search API
+        </a>.
+      </p>
       </p>
 
       <div class="mb-5">
         <a href="https://play.google.com/store/apps/details?id=live.iqfareez.waktusolatmalaysia"
-          class="btn btn-primary m-1">Download MPT app</a>
-        <a href="https://iqfareez.github.io/jakim-esolat-status/" class="btn btn-secondary m-1">JAKIM E-solat status</a>
+          class="btn btn-primary m-1">Web demo</a>
+        <a href="https://iqfareez.github.io/jakim-esolat-status/" class="btn btn-secondary m-1">Android Demo</a>
+        <p style="color: rgba(255, 255, 255, 0.8); font-size: 14px;">*Both demos are built using Flutter</p>
       </div>
 
       <hr class="col-3 col-md-2 mb-5">
@@ -68,16 +72,17 @@
         <div class="col-md-6">
           <h2>Data health </h2>
           <!-- <span class="badge bg-primary">Primary</span> -->
-          <p>Prayer times data will be refresh from JAKIM's server at monthly intervals. Fetcher is scheduled to run
-            (typically) at 8.00 am on the first day of the month.</p>
-          <p>Hence, this backup database is considered <b>valid in the same month</b> as the fetcher last run date.</p>
-          <div id="last-run"></div>
+          <p>Data will be updated from source every Monday and Thursday. Automated with GitHub <a
+              href="https://github.com/iqfareez/astros-api/actions" target="_blank"
+              rel="noopener noreferrer">actions</a>.</p>
+          <div id="last-run">
+          </div>
         </div>
 
         <div class="col-md-6">
           <h2>Resources</h2>
           <div id="resources"></div>
-          <p>Example: <kbd>GET</kbd>&nbsp;<code>https://astros-api.vercel.app/data</code></p>
+          <p>Example: <kbd>GET</kbd>&nbsp;<code>https://astros-api.herokuapp.com/data</code></p>
 
         </div>
 
@@ -85,14 +90,9 @@
           <h2>Links</h2>
           <p>If you're eager to know more</p>
           <ul>
-            <li><a href="https://www.e-solat.gov.my/" target="_blank">Portal e-solat JAKIM (Data source)</a>
-            </li>
-            <li><a href="https://github.com/iqfareez/mpt-backup-api" target="_blank">Source</a>
+            <li><a href="https://github.com/iqfareez/astros-api" target="_blank">GitHub repo</a>
             </li>
             <li><a href="https://github.com/typicode/json-server" target="_blank">json-server - Backbone of this API</a>
-            </li>
-            <li><a href="https://github.com/iqfareez/app_waktu_solat_malaysia/pull/82#issuecomment-927835374"
-                target="_blank">Why this website even exist?</a>
             </li>
           </ul>
         </div>

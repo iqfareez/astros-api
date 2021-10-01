@@ -1,4 +1,4 @@
-name: 'telegram ping to self'
+name: "telegram ping to self"
 
 # Controls when the workflow will run
 on:
@@ -13,13 +13,13 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      - name: HTTP Request Action
+      - name: Telegram notify
         uses: fjogeleit/http-request-action@v1.8.1
         with:
-          url: 'https://api.telegram.org/bot${{secrets.TELE_BOT_API_KEY}}/sendMessage'
-          method: 'POST'
+          url: "https://api.telegram.org/bot${{secrets.TELE_BOT_API_KEY}}/sendMessage"
+          method: "POST"
           data: '{
-            "chat_id": 320195187,
+            "chat_id": -1001591844692,
             "parse_mode": "MarkdownV2",
             "text": "${{github.workflow}} *completed*"
             }'
