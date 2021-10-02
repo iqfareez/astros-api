@@ -19,7 +19,7 @@ json_response = response.json()
 
 # Only put into json if everything's fine
 if (response.status_code == 200) and json_response['message'] == 'success':
-    print(f"Got data yeay")
+    print(f"Got data yeay\n")
     number = json_response['number']  # original response
     message = json_response['message']  # original response
 
@@ -56,8 +56,8 @@ else:
     print(f'Failed ({response.status_code})')
     raise SystemExit()
 
-fetch_finish = time.strftime("%a, %d %b %Y %H:%M:%S %Z")  # format UTC Time
-print(f'Fetching finish at {fetch_finish}')
+fetch_finish = time.strftime("%a, %d %b %Y %H:%M %Z")  # format UTC Time
+print(f'\nFetching finish at {fetch_finish}')
 
 # writing all location data to file
 with open('db.json', 'w') as outfile:
