@@ -1,4 +1,4 @@
-[![Fetch latest data](https://github.com/iqfareez/astros-api/actions/workflows/fetcher.yml/badge.svg)](https://github.com/iqfareez/astros-api/actions/workflows/fetcher.yml)
+[![Fetch and deploy](https://github.com/iqfareez/astros-api/actions/workflows/fetcher.yml/badge.svg)](https://github.com/iqfareez/astros-api/actions/workflows/fetcher.yml)
 
 # astros-api
 
@@ -7,13 +7,13 @@ _Make sure node is installed on your machine_
 
 ## How it works?
 
-![mpt backup api process drawio](./images/flowchart.png)
+![astros api process drawio](./images/flowchart.png)
 
 `db.json` database is created from a **python** script. Scheduled to run automatically via GitHub [action](https://github.com/iqfareez/mpt-backup-api/actions/workflows/fetcher.yml).
 
 Build and hosted by [Heroku](https://www.heroku.com/)
 
-## Honourable mentions
+## Honorable mentions
 
 1. http://open-notify.org/Open-Notify-API/People-In-Space/
 2. https://www.microsoft.com/en-us/bing/apis/bing-image-search-api

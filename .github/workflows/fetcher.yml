@@ -42,7 +42,7 @@ jobs:
           branch: master
   deploy:
     runs-on: ubuntu-latest
-    need: update
+    needs: update
     steps:
       - name: checkout repo content
         uses: actions/checkout@v3 # checkout the repository content to github runner
@@ -54,7 +54,7 @@ jobs:
           heroku_email: "iqmal3@outlook.com"
   notify:
     runs-on: ubuntu-latest
-    need: deploy
+    needs: deploy
     steps:
       - name: Telegram notify
         uses: fjogeleit/http-request-action@v1.8.1
