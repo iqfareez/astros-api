@@ -1,4 +1,4 @@
-name: "Fetch latest data"
+name: "Fetch and deploy"
 
 on:
   workflow_dispatch:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
-        uses: actions/checkout@v2 # checkout the repository content to github runner
+        uses: actions/checkout@v3 # checkout the repository content to github runner
 
       - name: setup python
         uses: actions/setup-python@v2
@@ -40,6 +40,22 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: master
+  deploy:
+    runs-on: ubuntu-latest
+    need: update
+    steps:
+      - name: checkout repo content
+        uses: actions/checkout@v3 # checkout the repository content to github runner
+      - name: Deploy to Heroku
+        uses: akhileshns/heroku-deploy@v3.12.12 # This is the action
+        with:
+          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+          heroku_app_name: "astros-api" #Must be unique in Heroku
+          heroku_email: "iqmal3@outlook.com"
+  notify:
+    runs-on: ubuntu-latest
+    need: deploy
+    steps:
       - name: Telegram notify
         uses: fjogeleit/http-request-action@v1.8.1
         with:
