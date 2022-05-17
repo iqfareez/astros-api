@@ -47,7 +47,7 @@ jobs:
       - name: checkout repo content
         uses: actions/checkout@v3 # checkout the repository content to github runner
         with:
-          ref: main
+          ref: master
       - name: Deploy to Heroku
         uses: akhileshns/heroku-deploy@v3.12.12
         with:
