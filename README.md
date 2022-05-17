@@ -2,8 +2,8 @@
 
 # astros-api
 
-To **start a local server**, run `npm install`, then `npm start` and go to `localhost:3000`.
-_Make sure node is installed on your machine_
+To **start a local server**, run `npm install`, then `npm start`, and go to `localhost:3000`.
+_Make sure Node is installed on your machine_
 
 ## How it works?
 
