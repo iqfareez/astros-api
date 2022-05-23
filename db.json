@@ -1,49 +1,6 @@
 {
   "data": {
-    "people": [
-      {
-        "name": "Oleg Artemyev",
-        "craft": "ISS",
-        "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OIP.cSWv_rSR09WNy8kISCU_EAHaLG&pid=Api",
-        "contentUrl": "http://www.spacefacts.de/bios/portraits_hi/cosmonauts/artemyev_oleg.jpg"
-      },
-      {
-        "name": "Denis Matveev",
-        "craft": "ISS",
-        "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OIP.BNNOGmsy5plj82sW8Oe3bAHaLW&pid=Api",
-        "contentUrl": "https://www.spacelaunchschedule.com/wp-content/uploads/denis_matveev_image_20210504184409-668x1024.jpg"
-      },
-      {
-        "name": "Sergey Korsakov",
-        "craft": "ISS",
-        "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OIP.lkZu6WIxPDxzEJvxJ5UtowAAAA&pid=Api",
-        "contentUrl": "https://www.istmira.com/w-hist/uploads/posts/2021-03/1616621063_1616621057021.jpeg"
-      },
-      {
-        "name": "Kjell Lindgren",
-        "craft": "ISS",
-        "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OIP.HXSQcXmUomPQQmUTDUinDQHaLH&pid=Api",
-        "contentUrl": "http://www.nasa.gov/sites/default/files/jsc2014e088151.jpg"
-      },
-      {
-        "name": "Bob Hines",
-        "craft": "ISS",
-        "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OIP.84odDtLWFnn5-QN9uLxRXQHaJQ&pid=Api",
-        "contentUrl": "http://www.nasa.gov/sites/default/files/styles/full_width/public/thumbnails/image/jsc2017e114858.jpg?itok=SF3nMmtJ"
-      },
-      {
-        "name": "Samantha Cristoforetti",
-        "craft": "ISS",
-        "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OIP.C7-Bvqjzve1oY10lYVw8kwHaGX&pid=Api",
-        "contentUrl": "https://blogs.esa.int/exploration/files/2019/12/Samantha_Cristoforetti_official_portrait-e1583312822755.jpg"
-      },
-      {
-        "name": "Jessica Watkins",
-        "craft": "ISS",
-        "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OIP.ZHd6fKvhp_QGokaRc7LnlQHaJQ&pid=Api",
-        "contentUrl": "https://imgix.elitedaily.com/uploads/image/2020/1/29/32dc54dc-c26b-4662-847a-ba7098251da4-44763373721_d83d3b6d7f_k.jpg"
-      }
-    ],
+    "people": [],
     "number": 7,
     "message": "success"
   }
