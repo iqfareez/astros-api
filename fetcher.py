@@ -46,6 +46,8 @@ if (response.status_code == 200) and json_response['message'] == 'success':
                 'contentUrl':
                 bingResponse['value'][0]['contentUrl']
             })
+        else:
+            raise RuntimeError(f"Status code {bingReq.status_code}")
 
         time.sleep(1)  # delay a bit
 
