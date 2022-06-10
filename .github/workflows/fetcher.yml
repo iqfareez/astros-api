@@ -3,7 +3,7 @@ name: "Fetch and deploy"
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 4 * * MON,THU" # “At 04:00 on Monday and Thursday.” (UTC)
+    - cron: "30 7 * * MON,THU" # “At 07:30 on Monday and Thursday.” (UTC)
 
 jobs:
   update:
