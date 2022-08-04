@@ -7,11 +7,24 @@ _Make sure Node is installed on your machine_
 
 ## How it works?
 
-![astros api process drawio](./images/flowchart.png)
+```mermaid
+flowchart TD
+    subgraph "External API"
+    A(OpenNotifyAPI) & B(Bing API)
+    end
+    B <--> C
+    A <--> C
+    subgraph fetcher.py
+    C[[Fetch latest astros data]] --> D[(db.json)] & E[(log.json)] --> F(Commit & push)
+    end
+    F -->|Heroku build triggered| G[Deployed to Heroku]
+```
 
-`db.json` database is created from a **python** script. Scheduled to run automatically via GitHub [action](https://github.com/iqfareez/mpt-backup-api/actions/workflows/fetcher.yml).
+**db.json** contains the actual astronauts database. **log.json** will store the date & time of the fetcher run.
 
-Build and hosted by [Heroku](https://www.heroku.com/)
+The [fetcher.py](fetcher.py) is scheduled to run automatically via GitHub [action](https://github.com/iqfareez/mpt-backup-api/actions/workflows/fetcher.yml). The frequency is as defined in [fetcher.yml](.github/workflows/fetcher.yml) script.
+
+Build and hosted by [Heroku](https://www.heroku.com/).
 
 ## Honorable mentions
 
