@@ -22,20 +22,20 @@
       {
         "name": "Nicole Mann",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OIP.DGSVYwQfnhC6FnmdcCI8RQHaJQ&pid=Api",
-        "contentUrl": "https://assets1.cbsnewsstatic.com/hub/i/r/2023/01/20/e12c26e8-5e1f-46a5-bdff-5a210f5dad6f/thumbnail/620x775g2/31cf97b07579144afe7a3055039ede8e/nicole-mann.jpg#"
+        "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OIP.Zwb6CSwvtlwUEKgKEWT-MwHaJ4&pid=Api",
+        "contentUrl": "https://www.nasa.gov/sites/default/files/thumbnails/image/nicole-mann2022.jpg"
       },
       {
         "name": "Josh Cassada",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse1.explicit.bing.net/th?id=OIP.sVMfXXK-5sPdfEc9HqGOdwHaKq&pid=Api",
+        "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OIP.sVMfXXK-5sPdfEc9HqGOdwHaKq&pid=Api",
         "contentUrl": "http://www.spacefacts.de/bios/portraits_hi/astronauts/cassada_josh.jpg"
       },
       {
         "name": "Koichi Wakata",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OIF.zjEKcWMqHhifZJ9V2G1kcA&pid=Api",
-        "contentUrl": "https://japannews.yomiuri.co.jp/wp-content/uploads/2023/02/wakata0201.jpg"
+        "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OIP.lARm29fwRyFsF_rWfHpaxwHaLJ&pid=Api",
+        "contentUrl": "http://www.spacefacts.de/bios/portraits_hi/international/wakata_koichi.jpg"
       },
       {
         "name": "Anna Kikina",
@@ -46,14 +46,14 @@
       {
         "name": "Fei Junlong",
         "craft": "Shenzhou 15",
-        "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OIP.xrDB8bGNaz8aQJucEo7JqgAAAA&pid=Api",
-        "contentUrl": "http://www.spacefacts.de/more/taikonauts/photo/fei_junlong_1.jpg"
+        "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OIP.Eo9fdb2etUjibinLxlFTMwHaJ4&pid=Api",
+        "contentUrl": "http://www.spacefacts.de/bios/portraits_hi/taikonauts/fei_junlong.jpg"
       },
       {
         "name": "Deng Qingming",
         "craft": "Shenzhou 15",
-        "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OIP.ZtYhtqCPPRBWH4d0qpv4OwAAAA&pid=Api",
-        "contentUrl": "http://www.spacefacts.de/more/taikonauts/photo/deng_qingming_1.jpg"
+        "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OIP.rC3IEtNGj6PSrdY6LBTk9gHaLC&pid=Api",
+        "contentUrl": "http://spacefacts.de/bios/portraits2/international/deng_qingming.jpg"
       },
       {
         "name": "Zhang Lu",
