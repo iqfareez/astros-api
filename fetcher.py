@@ -31,7 +31,7 @@ if (response.status_code == 200) and json_response['message'] == 'success':
             'https://api.bing.microsoft.com/v7.0/images/search',
             headers={'Ocp-Apim-Subscription-Key': AZURE_KEY1},
             params={
-                'q': name,
+                'q': name + ' astroanaut',
                 'count': 1
             })
         if bingReq.status_code == 200:
