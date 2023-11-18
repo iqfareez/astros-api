@@ -4,20 +4,27 @@
 
 # astros-api
 
-## To run
+Fetch the data and host the JSON-Server website. This project contains two parts:
 
-### Get AZURE key
+- Python part: To fetch the latest astros data
+- Node JS part: To host the JSON-Server website
 
-Create a new Bing Resource instance. Take the first & secondary key and save them in env `AZURE_KEY1` & `AZURE_KEY2`.
+## Get started
+
+### Get Azure key
+
+![image](https://github.com/iqfareez/astros-api/assets/60868965/f3961429-c649-4983-9b43-6e5ba3993929)
+
+Create a new Bing Resource instance. Take the first & secondary key and save them in .env file (See `.env.example` for example).
 
 ### Get latest astros data
 
-Prerequisites: **Node** & **Python 3.10**
+Prerequisites: **Node** & **Python 3.x**
 
 Install required packages
 
 ```
-pip install requests urllib3
+pip install -r requirements.txt
 ```
 
 Run the fetcher
@@ -50,7 +57,7 @@ flowchart TD
     subgraph fetcher.py
     C[[Fetch latest astros data]] --> D[(db.json)] & E[(log.json)] --> F(Commit & push)
     end
-    F -->|Heroku build triggered| G[Deployed to Heroku]
+    F -->|Railway build triggered| G[Deployed to Railway]
 ```
 
 [![Fetch and deploy](https://github.com/iqfareez/astros-api/actions/workflows/fetcher.yml/badge.svg)](https://github.com/iqfareez/astros-api/actions/workflows/fetcher.yml)
@@ -59,7 +66,7 @@ flowchart TD
 
 The [fetcher.py](fetcher.py) is scheduled to run automatically via GitHub [action](https://github.com/iqfareez/mpt-backup-api/actions/workflows/fetcher.yml). The frequency is as defined in [fetcher.yml](.github/workflows/fetcher.yml) script.
 
-Build and hosted by [Heroku](https://www.heroku.com/).
+Hosted on [Railway](https://railway.app?referralCode=h62-KZ).
 
 ## Honorable mentions
 

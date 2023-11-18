@@ -2,8 +2,11 @@ import json
 import os
 import time
 from datetime import datetime
+from dotenv import load_dotenv
 
 import requests
+
+load_dotenv()
 
 AZURE_KEY1 = os.environ['AZURE_KEY1']
 # AZURE_KEY2 = os.environ['AZURE_KEY2']
