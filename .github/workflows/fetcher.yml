@@ -3,7 +3,7 @@ name: "Fetch and deploy"
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 7 * * MON,THU" # “At 07:30 on Monday and Thursday.” (UTC)
+    - cron: "30 7 * * MON,THU,SAT" # “At 07:30 on Monday, Thursday, and Saturday.” (UTC)
 
 jobs:
   update:
@@ -20,7 +20,7 @@ jobs:
       - name: install python packages
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install -r requirements.txt
 
       - name: execute py script # run fetcher.py to get the latest data
         env:
@@ -33,7 +33,7 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add -A
-          git commit -m ":card_file_box: update db `date +"%d-%m-%Y"`" -a
+          git commit -m ":card_file_box: Update db `date +"%d-%m-%Y"`" -a
 
       - name: push changes
         uses: ad-m/github-push-action@v0.6.0
