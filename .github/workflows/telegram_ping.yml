@@ -14,7 +14,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Telegram notify
-        uses: fjogeleit/http-request-action@v1.8.1
+        uses: fjogeleit/http-request-action@v1
         with:
           url: "https://api.telegram.org/bot${{secrets.TELE_BOT_API_KEY}}/sendMessage"
           method: "POST"

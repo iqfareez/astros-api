@@ -10,10 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: checkout repo content
-        uses: actions/checkout@v3 # checkout the repository content to github runner
+        uses: actions/checkout@v4 # checkout the repository content to github runner
 
       - name: setup python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v5
         with:
           python-version: "3.10" # install the python version needed
 
@@ -36,7 +36,7 @@ jobs:
           git commit -m ":card_file_box: Update db `date +"%d-%m-%Y"`" -a
 
       - name: push changes
-        uses: ad-m/github-push-action@v0.6.0
+        uses: ad-m/github-push-action@v0.8.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           branch: master
@@ -49,7 +49,7 @@ jobs:
         with:
           ref: master
       - name: Deploy to Heroku
-        uses: akhileshns/heroku-deploy@v3.12.12
+        uses: akhileshns/heroku-deploy@v3.13.15
         with:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: "astros-api" #Must be unique in Heroku
@@ -59,7 +59,7 @@ jobs:
     needs: deploy
     steps:
       - name: Telegram notify
-        uses: fjogeleit/http-request-action@v1.8.1
+        uses: fjogeleit/http-request-action@v1
         with:
           url: "https://api.telegram.org/bot${{secrets.TELE_BOT_API_KEY}}/sendMessage"
           method: "POST"
