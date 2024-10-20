@@ -66,7 +66,40 @@ flowchart TD
 
 The [fetcher.py](fetcher.py) is scheduled to run automatically via GitHub [action](https://github.com/iqfareez/mpt-backup-api/actions/workflows/fetcher.yml). The frequency is as defined in [fetcher.yml](.github/workflows/fetcher.yml) script.
 
-Hosted on [Railway](https://railway.app?referralCode=h62-KZ).
+~Hosted on [Railway](https://railway.app?referralCode=h62-KZ).~
+
+Update 20/10/2024: I'm no longer hosting the API in Railway to save cost. Just use the db.json from GitHub directly.
+
+```
+https://raw.githubusercontent.com/iqfareez/astros-api/refs/heads/master/db.json
+```
+
+## Example
+
+Basic example to retrieve the data using Dart
+
+```dart
+import 'dart:convert';
+import 'package:http/http.dart' as http;
+
+void main() async {
+  final response = await http.get(Uri.parse(
+      'https://raw.githubusercontent.com/iqfareez/astros-api/refs/heads/master/db.json'));
+  if (response.statusCode != 200) {
+    throw Exception('Failed to load astros. StatusCode ${response.statusCode}');
+  }
+
+  final result = jsonDecode(response.body)["data"];
+  final totalPeopleInSpace = result['number'];
+  final peoples = result['people'];
+
+  print('Total people in space is $totalPeopleInSpace:\n');
+
+  for (final people in peoples) {
+    print(people['name']);
+  }
+}
+```
 
 ## Honorable mentions
 
