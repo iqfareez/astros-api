@@ -4,32 +4,32 @@
       {
         "name": "Oleg Kononenko",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OIP.D8_myhAEXWhQ36cSsAk28QHaEK&pid=Api",
+        "thumbnailUrl": "https://tse4.mm.bing.net/th/id/OIP.D8_myhAEXWhQ36cSsAk28QHaEK?pid=Api",
         "contentUrl": "https://e3.365dm.com/24/02/2048x1152/skynews-oleg-kononenko-loral-ohara_6444190.jpg?20240204150045"
       },
       {
         "name": "Nikolai Chub",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OIP.9rXVLj7PaHYjl8L2sLhl5gHaEK&pid=Api",
+        "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OIP.9rXVLj7PaHYjl8L2sLhl5gHaEK&r=0&pid=Api",
         "contentUrl": "http://www.collectspace.com/images/news-092324g-lg.jpg"
       },
       {
         "name": "Tracy Caldwell Dyson",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OIP.ozeEPExBkuMxJybclOQoAgHaKn&pid=Api",
+        "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OIP.ozeEPExBkuMxJybclOQoAgHaKn&r=0&pid=Api",
         "contentUrl": "http://www.spacefacts.de/bios/portraits_hi/astronauts/caldwell_tracy.jpg"
       },
       {
         "name": "Matthew Dominick",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse1.mm.bing.net/th/id/OIP.7t0rc5XK8sl2MhlNBxiGVQHaEK?pid=Api",
-        "contentUrl": "https://i.ytimg.com/vi/WhD-8qjGsLg/maxresdefault.jpg"
+        "thumbnailUrl": "https://tse4.mm.bing.net/th/id/OIP.k5MazK8ltUaX8Fpfpjr5LQHaJQ?pid=Api",
+        "contentUrl": "https://scitechdaily.com/images/NASA-Astronaut-Matthew-Dominick-777x971.jpg"
       },
       {
         "name": "Michael Barratt",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OIP.hpQkzqluHrwy8e6gvOjjdwHaLJ&pid=Api",
-        "contentUrl": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2009/04/astronaut_michael_barratt/9891381-2-eng-GB/Astronaut_Michael_Barratt_pillars.jpg"
+        "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OIP.9BQmuYsiisFNrX0RfMF4UQHaE8&pid=Api",
+        "contentUrl": "https://cdn.mos.cms.futurecdn.net/sf2MMB4bfBj244TskhYGZU-1200-80.jpg"
       },
       {
         "name": "Jeanette Epps",
@@ -46,8 +46,8 @@
       {
         "name": "Butch Wilmore",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse1.mm.bing.net/th?id=OIP.mrpqHh-pBErpugAVBImXLAHaJQ&pid=Api",
-        "contentUrl": "https://www.tntech.edu/news/images/releases/24-may/BarryWilmore1.jpeg"
+        "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OIP.j3zsflua4nny_jFqkSfyUgHaEK&pid=Api",
+        "contentUrl": "https://d.newsweek.com/en/full/2416472/barry-butch-wilmore-suni-williams.jpg"
       },
       {
         "name": "Sunita Williams",
@@ -64,14 +64,14 @@
       {
         "name": "Li Cong",
         "craft": "Tiangong",
-        "thumbnailUrl": "https://tse4.mm.bing.net/th/id/OIP.RV_D5MjVdSQaq3Ddvw3lqgHaEK?pid=Api",
+        "thumbnailUrl": "https://tse4.mm.bing.net/th?id=OIP.RV_D5MjVdSQaq3Ddvw3lqgHaEK&r=0&pid=Api",
         "contentUrl": "https://video.cgtn.com/news/2024-11-04/Shenzhou-18-astronaut-Li-Cong-exits-return-capsule-1yfwMPU86Jy/video/wu_1ibqhqfvt18qsf3m7e21ov6h0s3k1/wu_1ibqhqfvt18qsf3m7e21ov6h0s3k1.jpg"
       },
       {
         "name": "Ye Guangfu",
         "craft": "Tiangong",
-        "thumbnailUrl": "https://tse2.mm.bing.net/th?id=OIP.CI4S10_RE6floL90LQYCQwHaE8&r=0&pid=Api",
-        "contentUrl": "https://english.news.cn/20241104/39281c43e60b47a79e0c9c79020a03a2/2024110439281c43e60b47a79e0c9c79020a03a2_XxjpbeE007027_20241104_CBMFN0A001.JPG"
+        "thumbnailUrl": "https://tse3.mm.bing.net/th?id=OIP.zjOIQxigM5aVD8TNsdX60gHaHa&r=0&pid=Api",
+        "contentUrl": "https://nosolosputniks.files.wordpress.com/2022/04/ye-guangfu-nosolosputnik.jpg"
       }
     ],
     "number": 12,
