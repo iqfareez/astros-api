@@ -15,7 +15,7 @@ Fetch the data and host the JSON-Server website. This project contains two parts
 
 ![image](https://github.com/iqfareez/astros-api/assets/60868965/f3961429-c649-4983-9b43-6e5ba3993929)
 
-Create a new Bing Resource instance. Take the first & secondary key and save them in .env file (See `.env.example` for example).
+We use [Bing Search API](https://www.microsoft.com/en-us/bing/apis/bing-image-search-api) to get the astronauts profile images. Create a new Bing Resource instance. Take the first & secondary key and save them in .env file (See `.env.example` for example).
 
 ### Get latest astros data
 
