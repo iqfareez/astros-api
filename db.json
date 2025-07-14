@@ -10,7 +10,7 @@
       {
         "name": "Nikolai Chub",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse2.mm.bing.net/th/id/OIP.f1jHtjDkre68Gi8DvFRnWQHaLG?r=0&pid=Api",
+        "thumbnailUrl": "https://tse2.mm.bing.net/th/id/OIP.f1jHtjDkre68Gi8DvFRnWQHaLG?pid=Api",
         "contentUrl": "https://www.nasa.gov/wp-content/uploads/2023/10/jsc2023e052792.jpg"
       },
       {
@@ -22,7 +22,7 @@
       {
         "name": "Matthew Dominick",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse4.mm.bing.net/th/id/OIP.k5MazK8ltUaX8Fpfpjr5LQHaJQ?pid=Api",
+        "thumbnailUrl": "https://tse4.mm.bing.net/th/id/OIP.k5MazK8ltUaX8Fpfpjr5LQHaJQ?r=0&pid=Api",
         "contentUrl": "https://scitechdaily.com/images/NASA-Astronaut-Matthew-Dominick-777x971.jpg"
       },
       {
@@ -34,13 +34,13 @@
       {
         "name": "Jeanette Epps",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse3.mm.bing.net/th/id/OIP.t-LTd-gy_0BGuNOXguCLPAHaLG?pid=Api",
+        "thumbnailUrl": "https://tse3.mm.bing.net/th/id/OIP.t-LTd-gy_0BGuNOXguCLPAHaLG?r=0&pid=Api",
         "contentUrl": "https://scitechdaily.com/images/NASA-Jeanette-Epps-scaled.jpg"
       },
       {
         "name": "Alexander Grebenkin",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse4.mm.bing.net/th/id/OIP.N4QtnOvWDn7dyzsOK_nJOgHaJQ?pid=Api",
+        "thumbnailUrl": "https://tse4.mm.bing.net/th/id/OIP.N4QtnOvWDn7dyzsOK_nJOgHaJQ?r=0&pid=Api",
         "contentUrl": "https://everydayastronaut.com/wp-content/uploads/2024/02/spacex-crew-8-mission-specialist-alexander-grebenkin-of-roscosmos-53511842654-o-2-1160x1450.jpg"
       },
       {
@@ -52,8 +52,8 @@
       {
         "name": "Sunita Williams",
         "craft": "ISS",
-        "thumbnailUrl": "https://tse1.mm.bing.net/th/id/OIP.mxEO8q7jtqhLq1dZQf9WpgHaE8?r=0&pid=Api",
-        "contentUrl": "https://d.newsweek.com/en/full/2609581/nasa-astronaut-suni-williams.jpg"
+        "thumbnailUrl": "https://tse3.mm.bing.net/th/id/OIP.hM8vcACmc6IyupfDfR-V1QHaJQ?pid=Api",
+        "contentUrl": "https://d279m997dpfwgl.cloudfront.net/wp/2017/07/AP_186672041552.jpg"
       },
       {
         "name": "Li Guangsu",
