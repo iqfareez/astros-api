@@ -6,8 +6,8 @@
 
 Fetch the data and host the JSON-Server website. This project contains two parts:
 
-- Python part: To fetch the latest astros data
-- Node JS part: To host the JSON-Server website
+- Python part: Fetches the latest astros data
+- Node JS part: Hosts the JSON-Server website
 
 ## Get started
 
@@ -15,19 +15,19 @@ Fetch the data and host the JSON-Server website. This project contains two parts
 
 ![image](https://github.com/iqfareez/astros-api/assets/60868965/f3961429-c649-4983-9b43-6e5ba3993929)
 
-We use [Bing Search API](https://www.microsoft.com/en-us/bing/apis/bing-image-search-api) to get the astronauts profile images. Create a new Bing Resource instance. Take the first & secondary key and save them in .env file (See `.env.example` for example).
+We use the [Bing Search API](https://www.microsoft.com/en-us/bing/apis/bing-image-search-api) to get astronauts' profile images. Create a new Bing Resource instance. Take the primary and secondary keys and save them in the `.env` file (see `.env.example` for an example).
 
-### Get latest astros data
+### Get the latest astros data
 
 Prerequisites: **Node** & **Python 3.x**
 
-Install required packages
+Install required packages:
 
 ```
 pip install -r requirements.txt
 ```
 
-Run the fetcher
+Run the fetcher:
 
 ```
 py fetcher.py
@@ -45,7 +45,7 @@ Then
 npm start
 ```
 
-## How it work?
+## How does it work?
 
 ```mermaid
 flowchart TD
@@ -62,21 +62,19 @@ flowchart TD
 
 [![Fetch and deploy](https://github.com/iqfareez/astros-api/actions/workflows/fetcher.yml/badge.svg)](https://github.com/iqfareez/astros-api/actions/workflows/fetcher.yml)
 
-**db.json** contains the actual astronauts' database. **log.json** will store the date & time of the fetcher run.
+**db.json** contains the actual astronauts' database. **log.json** stores the date & time of the fetcher run.
 
-The [fetcher.py](fetcher.py) is scheduled to run automatically via GitHub [action](https://github.com/iqfareez/mpt-backup-api/actions/workflows/fetcher.yml). The frequency is as defined in [fetcher.yml](.github/workflows/fetcher.yml) script.
+The [fetcher.py](fetcher.py) script is scheduled to run automatically via a GitHub [action](https://github.com/iqfareez/mpt-backup-api/actions/workflows/fetcher.yml). The frequency is defined in the [fetcher.yml](.github/workflows/fetcher.yml) script.
 
-~Hosted on [Railway](https://railway.app?referralCode=h62-KZ).~
+## Usage
 
-Update 20/10/2024: I'm no longer hosting the API in Railway to save cost. Just use the db.json from GitHub directly.
+Fetch db.json file from the GitHub:
 
+```bash
+curl https://raw.githubusercontent.com/iqfareez/astros-api/refs/heads/master/db.json
 ```
-https://raw.githubusercontent.com/iqfareez/astros-api/refs/heads/master/db.json
-```
 
-## Example
-
-Basic example to retrieve the data using Dart
+Basic example to retrieve the data using Dart:
 
 ```dart
 import 'dart:convert';
