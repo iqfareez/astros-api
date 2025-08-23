@@ -1,3 +1,8 @@
+> [!WARNING]
+> # Deprecation notice
+> This API server codebase is now abandoned. Please visit latest implementation at https://github.com/iqfareez/astros-api-v2
+____
+
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
 ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)
 [![GitHub Actions](https://img.shields.io/badge/github%20actions-%232671E5.svg?style=for-the-badge&logo=githubactions&logoColor=white)](#how-it-work)
