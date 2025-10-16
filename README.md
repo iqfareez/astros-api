@@ -1,6 +1,6 @@
 > [!WARNING]
 > # Deprecation notice
-> This API server codebase is now abandoned. Please visit latest implementation at https://github.com/iqfareez/astros-api-v2
+> This API server codebase is now abandoned due to [Azure API changes](https://github.com/iqfareez/astros-api/issues/1#issue-3271648034). Please visit latest implementation at https://github.com/iqfareez/astros-api-v2
 ____
 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
